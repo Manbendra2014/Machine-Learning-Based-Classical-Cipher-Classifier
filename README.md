@@ -10,6 +10,42 @@
 
 #### 1. Playfair Cipher
 
+#### 2. Polybius Square Cipher
+
+
+#### 3. Baconian Cipher
+
+#### 4. Atbash Cipher
+
+### Group 2 : Transposition Ciphers
+
+#### 5. Columnar Transposition Cipher
+
+#### 6. Scytale Cipher
+
+#### 7. Rail Fence Cipher
+
+#### 8. Caesar Cipher
+
+### Group 3 : Advanced Ciphers
+
+#### 9. Hill Cipher
+
+#### 10. Affine Cipher
+
+#### 11. Vigenère Cipher
+
+#### 12. Gronsfeld Cipher
+
+## Dataset Preparation
+## Machine Learning Model
+## Model Evaluation
+## Working of Each Cipher
+
+### Group 1 : Substitution Ciphers
+
+#### 1. Playfair Cipher
+
 - **Key :** <p align="justify">The Playfair Cipher requires a keyword to construct the Playfair Square matrix. The keyword should be unique, with no duplicate letters, and is used to generate the matrix.</p>
 - **Encryption :** <p align="justify">The plaintext must be processed in pairs of two letters. If there is an odd number of letters, a dummy letter (like 'X') is added at the end. The encryption process involves finding the positions of the pair in the Playfair Square and applying specific rules to determine the ciphertext.</p>
 - **Decryption :** <p align="justify">The decryption process is similar to encryption, but it involves reversing the rules used during encryption to find the original plaintext.</p>
@@ -32,7 +68,7 @@
 - **Encryption :** <p align="justify">Each letter in the plaintext is replaced by its reverse in the alphabet. For example, 'A' becomes 'Z,' 'B' becomes 'Y,' and so on.</p>
 - **Decryption :** <p align="justify">The decryption process is the same as encryption since the substitution pattern is fixed.</p>
 
-### Group 2: Transposition Ciphers
+### Group 2 : Transposition Ciphers
 
 #### 5. Columnar Transposition Cipher
 
@@ -58,7 +94,7 @@
 - **Encryption :** <p align="justify">Each letter in the plaintext is shifted down the alphabet by the key value to produce the ciphertext. For example, with a shift of 3, 'A' becomes 'D,' 'B' becomes 'E,' and so on.</p>
 - **Decryption :** <p align="justify">Decryption involves shifting each letter in the ciphertext up the alphabet by the negative key value to reveal the original plaintext.</p>
 
-### Group 3: Advanced Ciphers
+### Group 3 : Advanced Ciphers
 
 #### 9. Hill Cipher
 
@@ -83,7 +119,6 @@
 - **Key :** <p align="justify">The Gronsfeld Cipher requires a numeric key, similar to the Vigenère Cipher. The key is repeated as needed to match the length of the plaintext, and each numeric value determines the letter shift for the corresponding letter in the plaintext.</p>
 - **Encryption :** <p align="justify">Each letter in the plaintext is shifted based on the corresponding numeric value in the key to generate the ciphertext.</p>
 - **Decryption :** <p align="justify">Decryption involves finding the numeric values of the key needed to reverse the shifts and obtain the original plaintext.</p>
-
 
 ## Conclusion
 
