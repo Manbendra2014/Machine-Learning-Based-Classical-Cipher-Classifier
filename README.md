@@ -2,11 +2,11 @@
 
 ## Overview
 
-<p style="text-align: justify;">This project aims to build a machine learning based classifier to distinguish between various classical ciphers. Classical ciphers are historical encryption techniques that perform simple substitution or transposition on plaintext to produce ciphertext. By training a machine learning model on labeled examples of ciphertexts from different ciphers, the classifier can predict the cipher used to encrypt an unseen ciphertext.</p>
+<p style="text-align: justify;">This project aims to build a machine learning-based classifier to distinguish between various classical ciphers. Classical ciphers are historical encryption techniques that perform simple substitution or transposition on plaintext to produce ciphertext. By training a machine learning model on labeled examples of ciphertexts from different ciphers, the classifier can predict the cipher used to encrypt an unseen ciphertext.</p>
 
 ## Classical Ciphers
 
-### Group 1 : Substitution Ciphers
+### Group 1: Substitution Ciphers
 
 #### 1. Playfair Cipher
 
@@ -24,7 +24,7 @@
 
 <p style="text-align: justify;">The Atbash Cipher has its roots in the Hebrew alphabet and is one of the oldest known ciphers. It was used in the Dead Sea Scrolls and is often referred to as the "mirror cipher."</p>
 
-### Group 2 : Transposition Ciphers
+### Group 2: Transposition Ciphers
 
 #### 5. Columnar Transposition Cipher
 
@@ -42,7 +42,7 @@
 
 <p style="text-align: justify;">The Caesar Cipher is named after Julius Caesar, who used it for private correspondence. It is considered one of the earliest and simplest encryption techniques.</p>
 
-### Group 3 : Advanced Ciphers
+### Group 3: Advanced Ciphers
 
 #### 9. Hill Cipher
 
