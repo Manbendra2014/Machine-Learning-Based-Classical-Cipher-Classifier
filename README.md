@@ -12,7 +12,6 @@
 
 #### 2. Polybius Square Cipher
 
-
 #### 3. Baconian Cipher
 
 #### 4. Atbash Cipher
@@ -37,7 +36,11 @@
 
 #### 12. Gronsfeld Cipher
 
-## Dataset Preparation
+## Dataset 
+
+### Dataset Preparation 
+
+### Dataset Information
 ## Machine Learning Model
 ## Model Evaluation
 ## Working of Each Cipher
