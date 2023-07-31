@@ -100,7 +100,7 @@
 
 ### Tokenizer Configuration
 
-<p align="justify">The tokenizer configuration is utilized to preprocess the raw text data , converting it into a format suitable for the model's input. During training, the same tokenizer configuration was used to process the training data , ensuring consistency between training and testing. The tokenizer handles tasks such as tokenization, padding, and numerical conversion, enabling the model to comprehend the input data effectively.</p>
+<p align="justify">The tokenizer configuration is utilized to preprocess the raw text data , converting it into a format suitable for the model's input. During training, the same tokenizer configuration was used to process the training data , ensuring consistency between training and testing. The tokenizer handles tasks such as tokenization , padding and numerical conversion , enabling the model to comprehend the input data effectively.</p>
 
 ### Label Encoder File
 
