@@ -40,9 +40,82 @@
 
 ### Dataset Preparation 
 
+<p align="justify">The dataset was prepared using the Natural Language Toolkit ( NLTK ) module in Python. NLTK is a powerful library for natural language processing and text analysis. We used NLTK to process text data and create a customized dataset for our project.</p>
+
+<p align="justify">In addition to using NLTK to process text data , we needed to augment our dataset with random words of random length. For this purpose , we created Python code that generates random words.</p>
+
 ### Dataset Information
+
+<p align="justify">Each cipher dataset consists of 1000 plaintext samples, encryption keys, ciphertext (encrypted plaintext), and decrypted plaintext.</p>
+
+#### Dataset Components
+
+<p align="justify">The cipher dataset is organized into the following components :</p>
+
+1. **Plaintext** : <p align="justify">This dataset contains 1000 plaintext samples. Plaintext refers to the original, unencrypted data or messages that are used as input for encryption.</p>
+
+2. **Key for Encryption** : <p align="justify">For each plaintext sample, there is a corresponding encryption key. The encryption key is a parameter used by the encryption algorithm to transform the plaintext into ciphertext.</p>
+
+3. **Decrypted Plaintext** : <p align="justify">Along with the plaintext and encryption key, the dataset includes the decrypted plaintext. After applying decryption using the corresponding key, the ciphertext should be transformed back into its original form, which is the decrypted plaintext.</p>
+
+4. **Ciphertext ( Encrypted Plaintext )** : <p align="justify">For each plaintext sample, there is a corresponding ciphertext. Ciphertext is the result of applying encryption to the plaintext using the encryption key. It represents the encrypted version of the original plaintext.</p>
+
 ## Machine Learning Model
-## Model Evaluation
+
+### LSTM ( Long Short - Term Memory ) RNN
+
+<p align="justify">LSTM is a type of recurrent neural network architecture designed to overcome the limitations of traditional RNNs ( Recurrent Neural Network ) in handling long-term dependencies. It introduces memory cells that allow the model to remember information over extended sequences. The key components of an LSTM cell are :</p>
+
+1. **Input Gate** : <p align="justify">Controls how much new information is added to the cell's state.</p>
+2. **Forget Gate** : <p align="justify">Controls what information to discard from the previous state.</p>
+3. **Output Gate** : <p align="justify">Controls how much information from the cell's state is used to produce the output.</p>
+
+<p align="justify">LSTM networks are well - suited for tasks where preserving context information over long sequences is critical, such as language modeling, speech recognition, and sentiment analysis.</p>
+
+### Bidirectional LSTM RNN
+
+<p align="justify">A Bidirectional LSTM RNN is an extension of the standard LSTM, which processes the input data in both forward and backward directions. By allowing the model to access future context information during training , Bidirectional LSTM can capture patterns from both past and future timesteps , resulting in enhanced performance for sequence modeling tasks.</p>
+
+<p align="justify">The Bidirectional LSTM combines two LSTM layers, one processing the input sequence forward and the other backward. The outputs of both LSTM layers are then concatenated , creating a comprehensive representation of the input sequence.</p>
+
+<p align="justify">Bidirectional LSTM RNNs are particularly effective in tasks where future context is essential , such as speech recognition , named entity recognition and machine translation.</p>
+
+<p align="justify">In the context of using Bidirectional LSTM, we have implemented the various combinations of units_lstm ( the number of units in the LSTM layers ) and dropout rate to find the best model for our specific task. The process will involve training multiple Bidirectional LSTM models with different units_lstm and dropout rate values , and then evaluating their performance on a validation set.</p>
+
+<p align="justify">To perform this hyperparameter search, we may use techniques such as grid search, random search, or more advanced optimization methods like Bayesian optimization. The best model will be selected based on its performance metrics , such as accuracy , precision or recall.</p>
+
+### Usage
+
+<p align="justify">In our project , we have leveraged the popular deep learning frameworks such as TensorFlow , Keras or PyTorch to implement LSTM and Bidirectional LSTM models. These frameworks offer user - friendly APIs and pre - built layers for creating these recurrent neural network architectures.</p>
+
+<p align="justify">Before feeding the sequence data into the LSTM and Bidirectional LSTM models , it's essential to preprocess the data appropriately. Preprocessing steps may include tokenization , padding and converting the text data into numerical representations suitable for training the models.</p>
+
+## Testing of the Model
+
+<p align="justify">During the testing process, we employed a trained machine learning model along with a tokenizer configuration and label encoder file. These components are crucial for accurately evaluating the performance of the model on unseen data.</p>
+
+### Trained Model
+
+<p align="justify">The trained machine learning model serves as the core component for decryption during testing. It was previously trained on the training data, where it learned the underlying patterns and relationships in the ciphertext. Using its knowledge from the training phase , the model can predict the corresponding plaintext when provided with encrypted data.</p>
+
+### Tokenizer Configuration
+
+<p align="justify">The tokenizer configuration is utilized to preprocess the raw text data , converting it into a format suitable for the model's input. During training, the same tokenizer configuration was used to process the training data , ensuring consistency between training and testing. The tokenizer handles tasks such as tokenization, padding, and numerical conversion, enabling the model to comprehend the input data effectively.</p>
+
+### Label Encoder File
+
+<p align="justify">In cryptography tasks , especially when dealing with classification based ciphers , a label encoder file is employed to encode the categorical labels of the ciphertext. This encoding facilitates the comparison of the model's predictions with the actual plaintext during testing , enabling the calculation of accuracy and other performance metrics.</p>
+
+### Evaluation Process
+
+<p align="justify">During the testing phase, we feed the encrypted ciphertext into the trained model , which employs the provided tokenizer configuration to preprocess the data. The model then utilizes its learned parameters to make predictions, generating the corresponding plaintext. The predicted plaintext is then compared to the actual plaintext ( encoded using the label encoder file ) to assess the model's accuracy and performance.</p>
+
+<p align="justify">By using a trained model , tokenizer configuration and label encoder file during testing , we ensure that the evaluation is consistent with the training process, yielding reliable insights into the model's ability to accurately decrypt ciphertext and handle various ciphers.</p>
+
+## Model Metrics Evaluation
+
+<p align="justify">Our machine learning model exhibits robust performance across all 3 cipher groups, achieving a consistent accuracy of around 95% for both training and testing data. This high accuracy validates the effectiveness of the model in decrypting various types of ciphers and demonstrates its potential for real-world applications in cryptographic analysis and message decryption.</p>
+
 ## Working of Each Cipher
 
 ### Group 1 : Substitution Ciphers
