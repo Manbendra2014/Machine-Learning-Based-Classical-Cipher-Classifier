@@ -46,7 +46,7 @@
 
 ### Dataset Information
 
-<p align="justify">Each cipher dataset consists of 1000 plaintext samples, encryption keys, ciphertext (encrypted plaintext), and decrypted plaintext.</p>
+<p align="justify">Each cipher dataset consists of 10,000 plaintext samples, encryption keys, ciphertext (encrypted plaintext), and decrypted plaintext.</p>
 
 #### Dataset Components
 
