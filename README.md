@@ -96,7 +96,7 @@
 
 ### Trained Model
 
-<p align="justify">The trained machine learning model serves as the core component for decryption during testing. It was previously trained on the training data, where it learned the underlying patterns and relationships in the ciphertext. Using its knowledge from the training phase , the model can predict the corresponding plaintext when provided with encrypted data.</p>
+<p align="justify">The trained machine learning model serves as the core component for decryption during testing. It was previously trained on the training data, where it learned the underlying patterns and relationships in the ciphertext. Using its knowledge from the training phase , the model can predict the corresponding plaintext type when provided with encrypted plaintext / ciphertext.</p>
 
 ### Tokenizer Configuration
 
