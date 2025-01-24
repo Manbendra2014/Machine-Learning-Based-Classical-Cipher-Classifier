@@ -64,11 +64,7 @@
 
 ### LSTM ( Long Short - Term Memory ) RNN
 
-<p align="justify">LSTM is a type of recurrent neural network architecture designed to overcome the limitations of traditional RNNs ( Recurrent Neural Network ) in handling long-term dependencies. It introduces memory cells that allow the model to remember information over extended sequences. The key components of an LSTM cell are :</p>
-
-1. **Input Gate** : <p align="justify">Controls how much new information is added to the cell's state.</p>
-2. **Forget Gate** : <p align="justify">Controls what information to discard from the previous state.</p>
-3. **Output Gate** : <p align="justify">Controls how much information from the cell's state is used to produce the output.</p>
+<p align="justify">LSTM is a type of recurrent neural network architecture designed to overcome the limitations of traditional RNNs ( Recurrent Neural Network ) in handling long-term dependencies. It introduces memory cells that allow the model to remember information over extended sequences. </p>
 
 <p align="justify">LSTM networks are well - suited for tasks where preserving context information over long sequences is critical, such as language modeling, speech recognition, and sentiment analysis.</p>
 
@@ -80,13 +76,9 @@
 
 <p align="justify">Bidirectional LSTM RNNs are particularly effective in tasks where future context is essential , such as speech recognition , named entity recognition and machine translation.</p>
 
-<p align="justify">In the context of using Bidirectional LSTM, we have implemented the various combinations of units_lstm ( the number of units in the LSTM layers ) and dropout rate to find the best model for our specific task. The process will involve training multiple Bidirectional LSTM models with different units_lstm and dropout rate values , and then evaluating their performance on a validation set.</p>
-
-<p align="justify">To perform this hyperparameter search, we may use techniques such as grid search, random search, or more advanced optimization methods like Bayesian optimization. The best model will be selected based on its performance metrics , such as accuracy , precision or recall.</p>
-
 ### Usage
 
-<p align="justify">In our project , we have leveraged the popular deep learning frameworks such as TensorFlow , Keras or PyTorch to implement LSTM and Bidirectional LSTM models. These frameworks offer user - friendly APIs and pre - built layers for creating these recurrent neural network architectures.</p>
+<p align="justify">In our project , we have leveraged the popular deep learning frameworks such as TensorFlow , Keras and PyTorch to implement LSTM and Bidirectional LSTM models. These frameworks offer user - friendly APIs and pre - built layers for creating these recurrent neural network architectures.</p>
 
 <p align="justify">Before feeding the sequence data into the LSTM and Bidirectional LSTM models , it's essential to preprocess the data appropriately. Preprocessing steps may include tokenization , padding and converting the text data into numerical representations suitable for training the models.</p>
 
@@ -198,4 +190,4 @@
 
 ## Conclusion
 
-<p align="justify">Leveraging machine learning to train a classifier on labeled datasets of ciphertexts encrypted with classical ciphers offers a powerful tool for identifying the encryption technique applied to unseen ciphertexts. This classifier can play a vital role in analyzing and deciphering encrypted messages, thereby offering valuable insights into historical encryption methods and their respective strengths in ensuring security. Understanding classical ciphers not only allows us to marvel at the brilliance of historical cryptographers but also lays a strong foundation for comprehending and developing modern cryptographic techniques that are essential for safeguarding computer security and protecting sensitive data in today's digital age.</p>
+<p align="justify">Leveraging machine learning to train a classifier on labeled datasets of ciphertexts encrypted with classical ciphers offers a powerful tool for identifying the encryption technique applied to unseen ciphertexts. This classifier can play a vital role in analyzing and deciphering encrypted messages, thereby offering valuable insights into historical encryption methods and their respective strengths in ensuring security.</p>
