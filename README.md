@@ -52,7 +52,7 @@
 
 <p align="justify">The cipher dataset is organized into the following components :</p>
 
-1. **Plaintext** : <p align="justify">This dataset contains 1000 plaintext samples. Plaintext refers to the original, unencrypted data or messages that are used as input for encryption.</p>
+1. **Plaintext** : <p align="justify">This dataset contains 10,000 plaintext samples. Plaintext refers to the original, unencrypted data or messages that are used as input for encryption.</p>
 
 2. **Key for Encryption** : <p align="justify">For each plaintext sample, there is a corresponding encryption key. The encryption key is a parameter used by the encryption algorithm to transform the plaintext into ciphertext.</p>
 
